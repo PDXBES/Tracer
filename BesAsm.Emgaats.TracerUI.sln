@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BesAsm.Framework.Tracer", "BesAsm.Framework.Tracer\BesAsm.Framework.Tracer.csproj", "{0C3593D4-024F-4F84-A28F-912E9D68BB91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BesAsm.Tracer.TracerAddIn", "BesAsm.Tracer.TracerAddIn\BesAsm.Tracer.TracerAddIn.csproj", "{91BCA8B3-7DF0-49E1-95A5-774148210F51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		GenerateDebug|Any CPU = GenerateDebug|Any CPU
+		GenerateDebug|x86 = GenerateDebug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.Debug|x86.ActiveCfg = Debug|x86
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.Debug|x86.Build.0 = Debug|x86
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.GenerateDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.GenerateDebug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.GenerateDebug|x86.ActiveCfg = Debug|x86
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.GenerateDebug|x86.Build.0 = Debug|x86
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.Release|x86.ActiveCfg = Release|x86
+		{0C3593D4-024F-4F84-A28F-912E9D68BB91}.Release|x86.Build.0 = Release|x86
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.GenerateDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.GenerateDebug|Any CPU.Build.0 = Debug|Any CPU
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.GenerateDebug|x86.ActiveCfg = Debug|Any CPU
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91BCA8B3-7DF0-49E1-95A5-774148210F51}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

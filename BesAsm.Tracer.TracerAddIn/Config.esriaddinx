@@ -1,0 +1,40 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>BesAsm.Tracer.TracerAddIn</Name>
+  <AddInID>{c79bf049-aded-4948-94dd-369f83ca59f8}</AddInID>
+  <Description>Stand-alone add-in for performing network traces</Description>
+  <Version>1.1</Version>
+  <Image>Images\BesAsm.Tracer.TracerAddIn.png</Image>
+  <Author>BES ASM</Author>
+  <Company>City of Portland</Company>
+  <Date>2/9/2015</Date>
+  <Targets>
+    <Target name="Desktop" version="10.2" />
+  </Targets>
+  <AddIn language="CLR4.5" library="BesAsm.Tracer.TracerAddIn.dll" namespace="BesAsm.Tracer.TracerAddIn">
+    <ArcMap>
+      <Commands>
+        <Button id="City_of_Portland_BesAsm.Tracer.TracerAddIn_OpenSettings" class="OpenSettings" message="Opens a dialog to configure the Tracer tool. Tip: You can trace downstream by swapping the up- and downstream node fields." caption="Configure Tracer" tip="Configure Tracer" category="Tracer Add-In" image="Images\OpenSettings.png" onDemand="true" />
+        <Tool id="City_of_Portland_BesAsm.Tracer.TracerAddIn_SelectStartLinks" class="SelectStartLinks" message="Load a line feature class with upstream and downstream nodes to enable this button." caption="Select a Start Link" tip="Select a Start Link" category="Tracer" image="Images\SelectStartLinks.png" onDemand="false" cursor="Images\SelectStartLinkCursor.cur" />
+        <Tool id="City_of_Portland_BesAsm.Tracer.TracerAddIn_SelectStopLinks" class="SelectStopLinks" message="Load a line feature class with upstream and downstream nodes to enable this button." caption="Select a Stop Link" tip="Select a Stop Link" category="Tracer Add-In" image="Images\SelectStopLinks.png" onDemand="false" cursor="Images\SelectStartLinkCursor.cur" />
+        <Button id="City_of_Portland_BesAsm.Tracer.TracerAddIn_ClearTrace" class="ClearTrace" message="Clears all selected Start and Stop links (you can remove individual links one at a time using the Configuration button)." caption="Clear Start/Stop Links" tip="Clear Start/Stop Links" category="Tracer Add-In" image="Images\ClearTrace.png" onDemand="false" />
+        <Button id="City_of_Portland_BesAsm.Tracer.TracerAddIn_PerformTrace" class="PerformTrace" message="Performs a trace using the selected Start and Stop Links." caption="Perform a Trace" tip="Perform a Trace" category="Tracer Add-In" image="Images\BesAsm.Tracer.TracerAddIn.png" onDemand="false" />
+      </Commands>
+      <Extensions>
+        <Extension id="City_of_Portland_BesAsm.Tracer.TracerAddIn_TracerExtension" class="TracerExtension" productName="BES Stand-Alone Tracer Extension" showInExtensionDialog="true" autoLoad="true">
+          <Description>Performs network tracing</Description>
+        </Extension>
+      </Extensions>
+      <Toolbars>
+        <Toolbar id="StandAloneTracerToolbar" caption="Network Tracer" showInitially="true">
+          <Items>
+            <Button refID="City_of_Portland_BesAsm.Tracer.TracerAddIn_OpenSettings" />
+            <Button refID="City_of_Portland_BesAsm.Tracer.TracerAddIn_SelectStartLinks" />
+            <Button refID="City_of_Portland_BesAsm.Tracer.TracerAddIn_SelectStopLinks" />
+            <Button refID="City_of_Portland_BesAsm.Tracer.TracerAddIn_PerformTrace" />
+            <Button refID="City_of_Portland_BesAsm.Tracer.TracerAddIn_ClearTrace" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
