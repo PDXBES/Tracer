@@ -6,7 +6,7 @@
   <Image>Images\BesAsm.Tracer.TracerAddIn.png</Image>
   <Author>BES ASM</Author>
   <Company>City of Portland</Company>
-  <Date>2/9/2015</Date>
+  <Date>6/17/2015</Date>
   <Targets>
     <Target name="Desktop" version="10.2" />
   </Targets>

@@ -125,6 +125,7 @@ namespace BesAsm.Tracer.TracerAddIn
           ArcMap.Application.StatusBar.ProgressAnimation.Show();
           ArcMap.Application.StatusBar.ProgressAnimation.Play(0, -1, -1);
           ArcMap.Application.StatusBar.ProgressAnimation.Message = "Building Network...";
+          progressBar.Position = 0;
           progressBar.MinRange = 0;
           progressBar.MaxRange = featureCount;
           progressBar.Message = "Building Network...";
