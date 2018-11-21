@@ -324,8 +324,9 @@ namespace BesAsm.Tracer.TracerAddIn
 
         ESRI.ArcGIS.Geometry.IGeometry pGeom;
         pGeom = pGeomFactory.CreateGeometryFromEnumerator(pEnumGeom);
-        pGeom.Envelope.Expand(1.2, 1.2, true);
-        activeView.Extent = pGeom.Envelope;
+        var newExtent = pGeom.Envelope;
+        newExtent.Expand(1.1, 1.1, true);
+        activeView.Extent = newExtent;
       }
 
       ArcMap.Application.StatusBar.ProgressAnimation.Stop();
