@@ -151,7 +151,7 @@ namespace BesAsm.Tracer.TracerAddIn
                   continue;
                 }
 
-                object sourceNode = dbValue;
+                string sourceNode = dbValue.ToString();
 
                 dbValue = edgeFeature.get_Value(sinkEdgeIndex);
                 if (dbValue == DBNull.Value)
@@ -160,30 +160,30 @@ namespace BesAsm.Tracer.TracerAddIn
                   continue;
                 }
 
-                object sinkNode = dbValue;
+                string sinkNode = dbValue.ToString();
+
+                if (sourceNode == null || sinkNode == null)
+                {
+                  badEdgeCount++;
+                  continue;
+                }
 
                 //DME pipes have a whitespace character appended to the FRM_NODE
 
                 //TODO: DME pipes with unknown up- or downstream nodes have
                 //XXXX. A better implemntation would not have this hardcoded.
-                if (sourceNode is string)
+                sourceNode = sourceNode.Trim();
+                if (string.IsNullOrEmpty(sourceNode) || sourceNode.StartsWith("XXXX"))
                 {
-                  sourceNode = ((string)sourceNode).Trim();
-                  if (((string)sourceNode).StartsWith("XXXX"))
-                  {
-                    badEdgeCount++;
-                    continue;
-                  }
+                  badEdgeCount++;
+                  continue;
                 }
 
-                if (sinkNode is string)
+                sinkNode = sinkNode.Trim();
+                if (string.IsNullOrEmpty(sinkNode) || sinkNode.StartsWith("XXXX"))
                 {
-                  sinkNode = ((string)sinkNode).Trim();
-                  if (((string)sinkNode).StartsWith("XXXX"))
-                  {
-                    badEdgeCount++;
-                    continue;
-                  }
+                  badEdgeCount++;
+                  continue;
                 }
 
                 SimpleGraphEdge graphEdge;

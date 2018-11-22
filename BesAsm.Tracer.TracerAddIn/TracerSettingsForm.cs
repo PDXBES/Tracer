@@ -204,7 +204,7 @@ namespace BesAsm.Tracer.TracerAddIn
       }
     }
 
-    private void btnSaveChanges_Click(object sender, System.EventArgs e)
+    private void btOk_Click(object sender, System.EventArgs e)
     {
       try
       {

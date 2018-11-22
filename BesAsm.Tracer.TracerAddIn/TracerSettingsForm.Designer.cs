@@ -32,7 +32,7 @@
       this.label5 = new System.Windows.Forms.Label();
       this.label4 = new System.Windows.Forms.Label();
       this.btnCancel = new System.Windows.Forms.Button();
-      this.btnSaveChanges = new System.Windows.Forms.Button();
+      this.btnOk = new System.Windows.Forms.Button();
       this.btnRemoveStop = new System.Windows.Forms.Button();
       this.btnRemoveStart = new System.Windows.Forms.Button();
       this.lstStopPipes = new System.Windows.Forms.ListBox();
@@ -81,15 +81,15 @@
       this.btnCancel.Text = "Cancel";
       this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
       // 
-      // btnSaveChanges
+      // btnOk
       // 
-      this.btnSaveChanges.DialogResult = System.Windows.Forms.DialogResult.OK;
-      this.btnSaveChanges.Location = new System.Drawing.Point(118, 270);
-      this.btnSaveChanges.Name = "btnSaveChanges";
-      this.btnSaveChanges.Size = new System.Drawing.Size(72, 23);
-      this.btnSaveChanges.TabIndex = 27;
-      this.btnSaveChanges.Text = "OK";
-      this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
+      this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
+      this.btnOk.Location = new System.Drawing.Point(118, 270);
+      this.btnOk.Name = "btnOk";
+      this.btnOk.Size = new System.Drawing.Size(72, 23);
+      this.btnOk.TabIndex = 27;
+      this.btnOk.Text = "OK";
+      this.btnOk.Click += new System.EventHandler(this.btOk_Click);
       // 
       // btnRemoveStop
       // 
@@ -178,7 +178,7 @@
       // 
       // TracerSettingsForm
       // 
-      this.AcceptButton = this.btnSaveChanges;
+      this.AcceptButton = this.btnOk;
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.CancelButton = this.btnCancel;
@@ -187,7 +187,7 @@
       this.Controls.Add(this.label5);
       this.Controls.Add(this.label4);
       this.Controls.Add(this.btnCancel);
-      this.Controls.Add(this.btnSaveChanges);
+      this.Controls.Add(this.btnOk);
       this.Controls.Add(this.btnRemoveStop);
       this.Controls.Add(this.btnRemoveStart);
       this.Controls.Add(this.lstStopPipes);
@@ -216,7 +216,7 @@
     private System.Windows.Forms.Label label5;
     private System.Windows.Forms.Label label4;
     private System.Windows.Forms.Button btnCancel;
-    private System.Windows.Forms.Button btnSaveChanges;
+    private System.Windows.Forms.Button btnOk;
     private System.Windows.Forms.Button btnRemoveStop;
     private System.Windows.Forms.Button btnRemoveStart;
     private System.Windows.Forms.ListBox lstStopPipes;
