@@ -2,13 +2,13 @@
   <Name>BesAsm.Tracer.TracerAddIn</Name>
   <AddInID>{c79bf049-aded-4948-94dd-369f83ca59f8}</AddInID>
   <Description>Stand-alone add-in for performing network traces</Description>
-  <Version>1.1</Version>
+  <Version>1.2</Version>
   <Image>Images\BesAsm.Tracer.TracerAddIn.png</Image>
   <Author>BES ASM</Author>
   <Company>City of Portland</Company>
-  <Date>6/17/2015</Date>
+  <Date>11/21/2018</Date>
   <Targets>
-    <Target name="Desktop" version="10.2" />
+    <Target name="Desktop" version="10.3" />
   </Targets>
   <AddIn language="CLR4.5" library="BesAsm.Tracer.TracerAddIn.dll" namespace="BesAsm.Tracer.TracerAddIn">
     <ArcMap>
